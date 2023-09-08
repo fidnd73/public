@@ -84,6 +84,7 @@ header{
 nav{
   position: relative; /* 왼 쪽 서브 배경 박스의 이미지 위치기준 */
   width: 90%;
+  height: 50px;
   margin: 5px auto 0;
   display: flex;
   justify-content: space-between;
@@ -966,7 +967,7 @@ section::before{
   position: absolute;
   width: 150px;
   top: 120px;
-  left: -15px;
+  left: -18px;
 }
 
 .icon-box img{
@@ -976,7 +977,22 @@ section::before{
   padding: 15px;
   overflow: hidden;
   border-radius: 50%;
+  transition: 0.25s;
 }
+.sub6_icon ul li div{transition: 0.25s;}
+
+.sub6_icon ul li:hover img{
+  border: none;
+  filter: invert();
+  border-radius: 0%;
+}
+
+.sub6_icon ul li:hover div{
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+}
+
 
 
 /* sub7_______________________________________________________ */
